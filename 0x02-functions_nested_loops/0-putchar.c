@@ -1,20 +1,21 @@
-#include "holberton.h"
+#include"main.h"
+
 /**
- * main - Prints Holberton
+ * main - Entry point
+ *
+ * Description: prints _putchar using putchar prototype
  *
  * Return: Always 0 (Success)
- */
+*/
+
 int main(void)
 {
-	_putchar('H');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
-	_putchar('t');
-	_putchar('o');
-	_putchar('n');
+	char str[] = "_putchar";
+	int ch;
+
+	for (ch = 0; ch < 8; ++ch)
+		_putchar(str[ch]);
 	_putchar('\n');
+
 	return (0);
 }
