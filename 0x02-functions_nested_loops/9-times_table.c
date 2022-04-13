@@ -8,45 +8,34 @@
  */
 void times_table(void)
 {
-int result;
-int step;
-int initial;
-int last_value;
-int k;
+	int x, y, multiplied_value;
 
-k = 0;
-step = 0;
-last_value = 9;
-
-do {
-
-for (initial = 0; initial <= last_value; initial++)
-{
-result = initial * step;
-if (result <= 9)
-{
-_putchar(result + '0');
-}
-else
-{
-_putchar((result / 10) + '0');
-_putchar((result % 10) + '0');
-}
-if (initial == 9)
-{
-break;
-}
-else
-{
-_putchar(',');
-_putchar(' ');
-
-}
-
-}
-_putchar('\n');
-step += 1;
-k += 1;
-
-} while (k <= 9);
+	for (y = 0; y < 10; y++)
+	{
+		for (x = 0; x < 10; x++)
+		{
+			multiplied_value = x * y;
+			if (x == 0)
+			{
+				_putchar(multiplied_value + '0');
+			}
+			else if (multiplied_value >= 10)
+			{
+				_putchar(' ');
+				_putchar(multiplied_value / 10 + '0');
+				_putchar(multiplied_value % 10 + '0');
+			}
+			else
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(multiplied_value + '0');
+			}
+			if (x != 9)
+			{
+				_putchar(',');
+			}
+		}
+		_putchar('\n');
+	}
 }
