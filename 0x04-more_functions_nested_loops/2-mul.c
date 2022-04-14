@@ -1,12 +1,20 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * Return: Always 0.
+ *mul - multiplies two integers and returns the product
+ *
+ *@a:input
+ *
+ *@b:input
+ *
+ *Description:a * b
+ *
+ *Return:product
+ *
  */
-int main(void)
+int mul(int a, int b)
 {
-    printf("%d\n", mul(98, 1024));
-    printf("%d\n", mul(-402, 4096));
-    return (0);
+	int product;
+
+	product = a * b;
+	return (product);
 }
