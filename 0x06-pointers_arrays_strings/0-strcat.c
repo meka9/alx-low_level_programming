@@ -1,31 +1,32 @@
-#include "main.h"
+#include "mainn.h"
 
 /**
- * _strcat - concatenates two strings
- *
- * @dest: destination string; src string is appended to it
- *
- * @src: Source string; gets appended to dest string
- *
- * Return: Pointer to dest
- */
-
+* _strcat - concatenates two strings
+* @dest: string to be copied to
+* @src: to be appended to end of dest
+*
+* Return: dest
+*/
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int j = 0;
+int i, j;
 
-	while (dest[i] != '\0')
-		i++;
+i = 0;
+j = 0;
 
-	while (src[j] != '\0')
-	{
-		*(dest + i) = src[j];
-		j++;
-		i++;
-	}
+while (*(dest + i) != '\0')
+{
+i++;
+j++;
+}
 
-	*(dest + i) = '\0';
-
-	return (dest);
+i = 0;
+while (*(src + i) != '\0')
+{
+dest[j] = src[i];
+i++;
+j++;
+}
+dest[j] = '\0';
+return (dest);
 }
