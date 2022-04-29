@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- * _islower - check the code for Holberton School students.
  *
  * @c:  is a parameter
  *
