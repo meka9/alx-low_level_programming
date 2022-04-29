@@ -1,3 +1,7 @@
+#ifndef _main_h_
+#define _main_h_
+/*copy list from task*/
+
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
