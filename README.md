@@ -1,1 +1,1 @@
-0x06. C - More pointers, arrays and stringse
+0x12. C - Singly linked lists
